@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Car Installments Calculator</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<section class="calculator-section">
+
+  <div class="container">
+
+    <div class="row g-4 align-items-stretch">
+
+      <!-- ================= LEFT SIDE ================= -->
+
+      <div class="col-lg-6 col-md-12">
+
+        <div class="calculator-card">
+
+          <div class="calculator-title">
+
+            <div class="icon-box">
+              <i class="fa-solid fa-car"></i>
+            </div>
+
+            <div>
+              <h4>Car Installments Calculator</h4>
+              <p>Calculate your monthly car payment easily</p>
+            </div>
+
+          </div>
+
+
+          <form action="">
+
+            <!-- Car Type -->
+
+            <div class="input-group-custom">
+
+              <label for="car-type">
+                Car Type
+              </label>
+
+              <div class="select-wrapper">
+
+                <i class="fa-solid fa-car-side"></i>
+
+                <select
+                  name="car-type"
+                  id="car-type"
+                >
+
+                  <option value="" selected disabled>
+                    Select Car Type
+                  </option>
+
+                  <option value="sedan">Sedan</option>
+                  <option value="suv">SUV</option>
+                  <option value="hatchback">Hatchback</option>
+                  <option value="coupe">Coupe</option>
+                  <option value="convertible">Convertible</option>
+                  <option value="pickup">Pickup Truck</option>
+                  <option value="van">Van</option>
+                  <option value="minivan">Minivan</option>
+                  <option value="wagon">Wagon</option>
+                  <option value="crossover">Crossover</option>
+                  <option value="sports">Sports Car</option>
+                  <option value="luxury">Luxury Car</option>
+                  <option value="electric">Electric Car</option>
+                  <option value="hybrid">Hybrid</option>
+                  <option value="off-road">Off-Road</option>
+                  <option value="roadster">Roadster</option>
+                  <option value="limousine">Limousine</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <!-- Car Model -->
+
+            <div class="input-group-custom">
+
+              <label for="car-model">
+                Car Model
+              </label>
+
+              <div class="select-wrapper">
+
+                <i class="fa-solid fa-car"></i>
+
+                <select
+                  name="car-model"
+                  id="car-model"
+                >
+
+                  <option value="" selected disabled>
+                    Select Car Model
+                  </option>
+
+                  <option value="toyota-corolla">
+                    Toyota Corolla
+                  </option>
+
+                  <option value="toyota-camry">
+                    Toyota Camry
+                  </option>
+
+                  <option value="toyota-yaris">
+                    Toyota Yaris
+                  </option>
+
+                  <option value="hyundai-elantra">
+                    Hyundai Elantra
+                  </option>
+
+                  <option value="hyundai-tucson">
+                    Hyundai Tucson
+                  </option>
+
+                  <option value="hyundai-i10">
+                    Hyundai i10
+                  </option>
+
+                  <option value="hyundai-accent">
+                    Hyundai Accent
+                  </option>
+
+                  <option value="kia-sportage">
+                    Kia Sportage
+                  </option>
+
+                  <option value="kia-cerato">
+                    Kia Cerato
+                  </option>
+
+                  <option value="kia-picanto">
+                    Kia Picanto
+                  </option>
+
+                  <option value="bmw-3-series">
+                    BMW 3 Series
+                  </option>
+
+                  <option value="bmw-5-series">
+                    BMW 5 Series
+                  </option>
+
+                  <option value="bmw-x3">
+                    BMW X3
+                  </option>
+
+                  <option value="bmw-x5">
+                    BMW X5
+                  </option>
+
+                  <option value="mercedes-c-class">
+                    Mercedes C-Class
+                  </option>
+
+                  <option value="mercedes-e-class">
+                    Mercedes E-Class
+                  </option>
+
+                  <option value="mercedes-glc">
+                    Mercedes GLC
+                  </option>
+
+                  <option value="audi-a3">
+                    Audi A3
+                  </option>
+
+                  <option value="audi-a4">
+                    Audi A4
+                  </option>
+
+                  <option value="audi-q5">
+                    Audi Q5
+                  </option>
+
+                  <option value="nissan-sunny">
+                    Nissan Sunny
+                  </option>
+
+                  <option value="nissan-sentra">
+                    Nissan Sentra
+                  </option>
+
+                  <option value="nissan-qashqai">
+                    Nissan Qashqai
+                  </option>
+
+                  <option value="ford-focus">
+                    Ford Focus
+                  </option>
+
+                  <option value="ford-mustang">
+                    Ford Mustang
+                  </option>
+
+                  <option value="ford-explorer">
+                    Ford Explorer
+                  </option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <!-- Price -->
+
+            <div class="input-group-custom">
+
+              <label for="price">
+                Price Of Car
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-solid fa-money-bill"></i>
+
+                <input
+                  type="number"
+                  id="price"
+                  placeholder="Enter car price"
+                />
+
+                <span>EGP</span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Down Payment -->
+
+            <div class="input-group-custom">
+
+              <label for="down-payment">
+                Down Payment Amount
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <input
+                  type="number"
+                  id="down-payment"
+                  placeholder="Enter down payment"
+                />
+
+                <span>EGP</span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Installment Term -->
+
+            <div class="input-group-custom">
+
+              <label for="term">
+                Installment Term
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <input
+                  type="number"
+                  id="term"
+                  placeholder="Enter term"
+                />
+
+                <span>Months</span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Interest -->
+
+            <div class="input-group-custom">
+
+              <label for="interest">
+                Interest Rate
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-solid fa-percent"></i>
+
+                <input
+                  type="number"
+                  id="interest"
+                  placeholder="Enter interest rate"
+                />
+
+                <span>%</span>
+
+              </div>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="calculate-btn"
+            >
+
+              Calculate Now
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= RIGHT SIDE ================= -->
+
+      <div class="col-lg-6 col-md-12">
+
+        <div class="result-card">
+
+          <!-- Top Result -->
+
+          <div class="result-banner">
+
+            <div>
+
+              <span>Monthly Installment</span>
+
+              <h2>
+                4,500
+                <small>EGP</small>
+              </h2>
+
+              <p>
+                Estimated monthly payment
+              </p>
+
+            </div>
+
+            <div class="car-image">
+
+              <img
+                src="images/1.png"
+                alt="Car"
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- Details -->
+
+          <div class="details-section">
+
+            <div class="details-header">
+
+              <div>
+
+                <h4>Payment Details</h4>
+
+                <p>
+                  Your installment breakdown
+                </p>
+
+              </div>
+
+              <i class="fa-solid fa-receipt"></i>
+
+            </div>
+
+
+            <!-- Detail -->
+
+            <div class="detail-row">
+
+              <div class="detail-name">
+
+                <i class="fa-solid fa-car-side"></i>
+
+                <span>Car Type</span>
+
+              </div>
+
+              <strong>Sedan</strong>
+
+            </div>
+
+
+            <div class="detail-row">
+
+              <div class="detail-name">
+
+                <i class="fa-solid fa-car"></i>
+
+                <span>Car Model</span>
+
+              </div>
+
+              <strong>Toyota Corolla</strong>
+
+            </div>
+
+
+            <div class="detail-row">
+
+              <div class="detail-name">
+
+                <i class="fa-solid fa-tag"></i>
+
+                <span>Price Of Car</span>
+
+              </div>
+
+              <strong>100,000 EGP</strong>
+
+            </div>
+
+
+            <div class="detail-row">
+
+              <div class="detail-name">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <span>Down Payment</span>
+
+              </div>
+
+              <strong>36,000 EGP</strong>
+
+            </div>
+
+
+            <div class="detail-row">
+
+              <div class="detail-name">
+
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>Installment Term</span>
+
+              </div>
+
+              <strong>36 Months</strong>
+
+            </div>
+
+
+            <div class="detail-row">
+
+              <div class="detail-name">
+
+                <i class="fa-solid fa-percent"></i>
+
+                <span>Interest Rate</span>
+
+              </div>
+
+              <strong>13%</strong>
+
+            </div>
+
+
+            <!-- Total -->
+
+            <div class="total-box">
+
+              <div>
+
+                <span>Total Amount Paid</span>
+
+                <h3>680,000 EGP</h3>
+
+              </div>
+
+              <div class="check-icon">
+
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

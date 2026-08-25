@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7fb;
+  color: #222;
+}
+
+
+/* =========================
+   Main Section
+========================= */
+
+.calculator-section {
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+
+/* =========================
+   Calculator Card
+========================= */
+
+.calculator-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+  height: 100%;
+}
+
+
+/* =========================
+   Title
+========================= */
+
+.calculator-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.calculator-title h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.calculator-title p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background: #f0e5fa;
+  color: blueviolet;
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+}
+
+
+/* =========================
+   Inputs
+========================= */
+
+.input-group-custom {
+  margin-bottom: 18px;
+}
+
+.input-group-custom label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+
+/* Select */
+
+.select-wrapper,
+.input-wrapper {
+  position: relative;
+}
+
+.select-wrapper i,
+.input-wrapper i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: blueviolet;
+  z-index: 2;
+}
+
+select,
+input {
+  width: 100%;
+  height: 48px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: #fafafa;
+
+  padding: 0 15px 0 45px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+select {
+  appearance: none;
+  cursor: pointer;
+}
+
+select:focus,
+input:focus {
+  border-color: blueviolet;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
+}
+
+
+/* Input currency */
+
+.input-wrapper span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #888;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Calculate Button
+========================= */
+
+.calculate-btn {
+  width: 100%;
+  border: none;
+
+  background: blueviolet;
+  color: white;
+
+  padding: 13px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  margin-top: 8px;
+
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.calculate-btn:hover {
+  background: #7025a5;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   Result Card
+========================= */
+
+.result-card {
+  background: white;
+  border-radius: 20px;
+
+  padding: 20px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+
+  height: 100%;
+}
+
+
+/* =========================
+   Result Banner
+========================= */
+
+.result-banner {
+  position: relative;
+
+  min-height: 190px;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    #f0e5fa,
+    #e6d4f7
+  );
+
+  padding: 25px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.result-banner span {
+  color: blueviolet;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.result-banner h2 {
+  color: #65209a;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.result-banner h2 small {
+  font-size: 16px;
+}
+
+.result-banner p {
+  color: #777;
+  font-size: 13px;
+}
+
+
+/* Car */
+
+.car-image {
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+
+  width: 52%;
+}
+
+.car-image img {
+  width: 100%;
+  display: block;
+}
+
+
+/* =========================
+   Details
+========================= */
+
+.details-section {
+  padding: 25px 5px 5px;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.details-header h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.details-header p {
+  color: #888;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.details-header > i {
+  color: blueviolet;
+  font-size: 23px;
+}
+
+
+/* =========================
+   Detail Rows
+========================= */
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 5px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.detail-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #555;
+  font-size: 14px;
+}
+
+.detail-name i {
+  width: 30px;
+  height: 30px;
+
+  background: #f4eafa;
+  color: blueviolet;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+}
+
+.detail-row strong {
+  font-size: 14px;
+  color: #222;
+}
+
+
+/* =========================
+   Total
+========================= */
+
+.total-box {
+  margin-top: 20px;
+
+  padding: 18px;
+
+  background: #eaf8ee;
+
+  border: 1px solid #c9e9d1;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-box span {
+  color: #39814b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.total-box h3 {
+  color: #216b34;
+  font-size: 23px;
+  margin: 5px 0 0;
+  font-weight: 800;
+}
+
+.check-icon {
+  width: 38px;
+  height: 38px;
+
+  background: #2d9b4b;
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 991px) {
+
+  .calculator-section {
+    padding: 40px 0;
+  }
+
+  .calculator-card,
+  .result-card {
+    padding: 25px;
+  }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 575px) {
+
+  .calculator-section {
+    padding: 25px 10px;
+  }
+
+  .calculator-card,
+  .result-card {
+    padding: 18px;
+    border-radius: 15px;
+  }
+
+  .calculator-title h4 {
+    font-size: 18px;
+  }
+
+  .calculator-title p {
+    font-size: 12px;
+  }
+
+  .icon-box {
+    width: 45px;
+    height: 45px;
+    font-size: 19px;
+  }
+
+  .result-banner {
+    min-height: 170px;
+    padding: 18px;
+  }
+
+  .result-banner h2 {
+    font-size: 28px;
+  }
+
+  .car-image {
+    width: 55%;
+    right: -10px;
+  }
+
+  .detail-row {
+    padding: 13px 2px;
+  }
+
+  .detail-name {
+    font-size: 13px;
+  }
+
+  .detail-row strong {
+    font-size: 12px;
+  }
+
+  .total-box h3 {
+    font-size: 18px;
+  }
+
+}
